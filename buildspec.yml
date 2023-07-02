@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  build:
+    commands:
+      - mvn package
+      - sam package
+        --template-file template.yaml
+        --s3-bucket ala123sobhanbucket
+        --output-template-file packaged-template.yaml
+artifacts:
+  files:
+    - packaged-template.yml

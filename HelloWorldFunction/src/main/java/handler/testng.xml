@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="MyTest1">
+        <classes>
+            <class name="handler.DummyAPITest"/>
+            <class name="handler.LibraryApiTest"/>
+        </classes>
+    </test>
+
+
+
+
+</suite>
