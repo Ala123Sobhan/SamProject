@@ -6,7 +6,7 @@ phases:
       java: corretto11
   build:
     commands:
-      - make -f Makefile
+      - make -f HelloWorldFunction/Makefile
 artifacts:
   files:
     - "target/my-project-1.0-SNAPSHOT.jar"
