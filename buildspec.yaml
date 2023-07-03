@@ -11,6 +11,7 @@ phases:
       - sam package
         --template-file template.yaml
         --output-template-file packaged-template-$(date +%Y%m%d%H%M%S).yml
+      - cat packaged-template-$(date +%Y%m%d%H%M%S).yml
 artifacts:
   files:
     - packaged-template-*.yml
