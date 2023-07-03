@@ -6,9 +6,11 @@ phases:
       java: corretto11
   build:
     commands:
-      - mvn package
+      - mvn clean package
       - ls -R
+      - cp target/my-project-1.0-SNAPSHOT.jar .
       - sam package --output-template-file packaged-template.yml
 artifacts:
   files:
     - packaged-template.yml
+    - my-project-1.0-SNAPSHOT.jar
