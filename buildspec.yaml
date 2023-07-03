@@ -10,7 +10,7 @@ phases:
       - ls -R
       - sam package
         --template-file template.yaml
-        --output-template-file packaged-template.yml
+        --output-template-file packaged-template-$(date +%Y%m%d%H%M%S).yml
 artifacts:
   files:
-    - packaged-template.yml
+    - packaged-template-*.yml
