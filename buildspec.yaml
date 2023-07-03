@@ -6,9 +6,7 @@ phases:
       java: corretto11
   build:
     commands:
-      - ls -R
-      - mvn clean package
-      - sam build
+      - make -f Makefile
 artifacts:
   files:
-    - packaged-template.yml
+    - "target/my-project-1.0-SNAPSHOT.jar"

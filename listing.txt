@@ -1,0 +1,2 @@
+buildspec.yaml	HelloWorldFunction  pom.xml    samconfig.toml  template.yaml
+events		listing.txt	    README.md  target	       tree.txt
