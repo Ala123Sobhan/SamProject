@@ -6,4 +6,9 @@ phases:
       java: corretto11
   build:
     commands:
-      - sam build
+      - mvn clean package
+      - ls -R
+      - sam package --output-template-file packaged-template.yaml
+artifacts:
+  files:
+    - packaged-template.yml
