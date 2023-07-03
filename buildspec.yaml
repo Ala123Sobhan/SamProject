@@ -8,8 +8,7 @@ phases:
     commands:
       - ls -R
       - mvn clean package
-      - mv ./target/my-project-1.0-SNAPSHOT.jar ./HelloWorldFunction/target/my-project-1.0-SNAPSHOT.jar
-      - sam package --output-template-file packaged-template.yml
+      - sam build
 artifacts:
   files:
     - packaged-template.yml
