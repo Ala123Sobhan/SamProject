@@ -11,4 +11,4 @@ phases:
       - sam package --output-template-file packaged-template.yaml
 artifacts:
   files:
-    - packaged-template.yml
+    - packaged-template.yaml
