@@ -10,7 +10,7 @@ phases:
       - ls -R
       - sam package
         --template-file template.yaml
-        --output-template-file packaged-template.yaml
+        --output-template-file packaged-template.yml
 artifacts:
   files:
     - packaged-template.yml
