@@ -8,9 +8,7 @@ phases:
     commands:
       - mvn package
       - ls -R
-      - sam package
-        --template-file template.yaml
-        --output-template-file packaged-template.yml
+      - sam package --output-template-file packaged-template.yml
 artifacts:
   files:
     - packaged-template.yml
